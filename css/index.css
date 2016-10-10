@@ -1,0 +1,92 @@
+.jd_layout {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    height: 1000px;
+    /*background: red;*/
+    position: relative;
+
+}
+
+/**头部搜索**/
+.jd_header {
+    position: fixed; /***是以windows 最外层容器计算****/
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+
+}
+
+.jd_header > .jd_header_box {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    background: rgba(201, 21, 32, 0.85);
+    height: 40px;
+    position: relative;
+
+}
+
+.jd_header > .jd_header_box > .icon_logo {
+    width: 60px;
+    height: 30px;
+    position: absolute;
+    background: url("../images/logo.png") no-repeat;
+    background-size: 53px 20px;
+    top: 10px;
+    left: 10px;
+    /*background-position: 0 -103px;*/
+}
+
+.jd_header > .jd_header_box > .login {
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 15px;
+}
+
+.jd_header > .jd_header_box > form {
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 50px;
+    height: 40px;
+    position: relative;
+}
+
+.jd_header > .jd_header_box > form > input {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 30px;
+
+}
+.jd_header > .jd_header_box > form > .icon_search {
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    background: url("../images/find.png") no-repeat;
+    background-size: 20px 20px;
+    position: absolute;
+    top: 5px;
+    left: 85px;
+}
+/** 轮播图**/
+.jd_banner {
+    width: 100%;
+    position: relative;
+
+
+}
+.jd_banner ul {
+
+}

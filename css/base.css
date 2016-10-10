@@ -1,0 +1,54 @@
+/*************重置CSS的样式******************/
+*,
+::before,
+::after {
+    /* 选择所有标签*/
+    margin: 0;
+    padding: 0;
+    /*去除高亮*/
+    -webkit-tap-highlight-color: transparent;
+
+    /*Box 所有盒子都是以边框计算宽度*/
+    -webkit-box-sizing: border-box; /*兼容*/
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family:"MicroSoft YaHei" , sans-serif; /*设备默认字体*/
+    color: #333;
+}
+a{
+    color: #333333;
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+input {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;/*清除移动端默认的样式*/
+
+}
+
+/************公用样式****************/
+.f_left{
+    float: left;
+}
+.f_right{
+    float: right;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
