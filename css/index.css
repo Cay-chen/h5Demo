@@ -152,8 +152,11 @@ body {
 
 /* 导航栏*/
 .jd_nav {
-    background: #f3f3f3 ;
-    width : 100%;
+    background: #f3f3f3;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
 }
 
 .jd_nav > ul {
@@ -183,4 +186,164 @@ body {
     font-size: 16px;
     color: #666;
 
+}
+
+/**商品主盒子*/
+.jd_product {
+    padding: 0 5px;
+
+}
+
+.jd_product > .product_box {
+    width: 100%;
+    background: #ffffff;
+    margin-top: 10px;
+    box-shadow: 0 0 1px #ffd2d2;
+}
+
+.jd_product > .product_box > .product_box_tit {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+
+}
+
+.jd_product > .product_box > .product_box_tit.no_border {
+    border-bottom: none;
+
+}
+
+.jd_product > .product_box > .product_box_tit > h3 {
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+}
+
+.jd_product > .product_box > .product_box_tit > h3::before {
+    /*/!*伪类 转块  display block  position: absolute float left*!/  不转块 不显示 */
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+    top: 10px;
+    left: 10px;
+
+}
+
+/*掌上秒杀*/
+.jd_sk {
+
+}
+
+.jd_sk .sk_icon {
+    background: url("../images/oncolck.png");
+    background-size: 15px 16px;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-top: 8px;
+
+}
+
+.jd_sk .sk_name {
+    color: #d8505c;
+    font-size: 15px;
+    margin-left: 10px;
+    float: left;
+
+}
+
+.jd_sk .sk_time {
+    float: left;
+    margin-top: 8px;
+
+}
+
+.jd_sk .sk_time > span {
+    float: left;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #333333;
+    color: #ffffff;
+    margin-left: 3px;
+
+}
+
+.jd_sk .sk_time > span:nth-child(3n) {
+    background: #fff;
+    color: #333333;
+    width: 5px;
+
+}
+
+.jd_sk > .product_box_con > ul {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+
+}
+
+.jd_sk > .product_box_con > ul > li {
+    width: 33.333%;
+    font-size: 12px;
+    float: left;
+
+}
+
+.jd_sk > .product_box_con > ul > li:last-child > a {
+    border-right: none;
+}
+
+.jd_sk > .product_box_con > ul > li > a {
+    display: block;
+    width: 100%;
+    border-right: 1px solid #e0e0e0;
+
+}
+
+.jd_sk > .product_box_con > ul > li > a > img {
+    width: 64%;
+    margin: 0 auto;
+    display: block;
+}
+
+/*
+p:first-of-type 选择p同类型的同级的 第一个元素
+p:last-of-type 选择p同类型的同级的 最后一个元素
+p:n-of-type 选择p同类型的同级的 第n个元素
+
+
+*/
+.jd_sk > .product_box_con > ul > li > p:first-of-type {
+    color: #d8505c;
+    padding-top: 5px;
+
+}
+
+.jd_sk > .product_box_con > ul > li > p:last-of-type {
+    text-decoration: line-through;/* 删除线*/
+    color: #666666;
+    padding-top: 5px;
+}
+.w_50 {
+    width: 50%;
+    display: block;
+}
+.w_50 > img {
+    display: block;
+    width: 100%;
+}
+.b_left {
+    border-left: 1px solid #e0e0e0;
+}
+.b_right {
+    border-right: 1px solid #e0e0e0;
+}
+.b_bottom {
+    border-bottom: 1px solid #e0e0e0;
 }
